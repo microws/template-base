@@ -1,0 +1,4 @@
+FROM public.ecr.aws/docker/library/node:20-alpine as cache
+WORKDIR ${APP_HOME}
+COPY package*.json ${APP_HOME}
+RUN --mount=type=secret,id=npmrc,target=/root/.npmrc npm ci

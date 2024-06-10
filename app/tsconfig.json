@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "jsx": "react-jsx",
+    "target": "ESNext",
+
+    //Bundler mode
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules"
+      }
+    ],
+    "declaration": true,
+    "sourceMap": true,
+    "outDir": "dist/"
+  },
+  "include": ["../"],
+  "exclude": ["./Shared*.ts"]
+}

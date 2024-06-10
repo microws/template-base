@@ -1,0 +1,101 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+dialog {
+  margin: auto;
+}
+html {
+  font-size: 16px;
+}
+html.overlay {
+  overflow: hidden;
+  height: 100%;
+  overscroll-behavior: none;
+  body {
+    overflow: hidden;
+    height: 100%;
+  }
+}
+html,
+body,
+#root {
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  background: #f3f3f3;
+  height: 100%;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+figure {
+  picture {
+    width: 100%;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  font-weight: normal;
+}
+button {
+  background: none;
+  border: none;
+  padding: 0;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#root {
+  --black: #1e1e1e;
+  --black200: #1e1e1e20;
+  --black400: #1e1e1e40;
+  --black500: #1e1e1e50;
+  --black800: #1e1e1e80;
+  --black900: #1e1e1e90;
+  --background: #f3f3f3;
+  --offwhite: #f3f3f3;
+  font-family: "Roboto";
+  color: var(--black);
+}

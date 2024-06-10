@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "lib": ["ESNext"],
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "skipLibCheck": true,
+    "jsx": "react-jsx",
+
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "outDir": "public/",
+
+    "noImplicitAny": false,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "declaration": true,
+    "sourceMap": false,
+    "declarationDir": "public/types"
+  },
+  "exclude": ["public", "tests", "app"]
+}
